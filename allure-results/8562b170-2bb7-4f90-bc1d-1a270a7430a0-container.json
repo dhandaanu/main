@@ -1,0 +1,1 @@
+{"uuid":"8562b170-2bb7-4f90-bc1d-1a270a7430a0","name":"Scenario: The user back to Stack page","children":["5f8fbe59-ecb8-410e-9d00-339d462329c9"],"befores":[{"name":"stepdefinition.Hooks.setUp()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1701047485196,"stop":1701047485197}],"afters":[],"start":1701047485195,"stop":1701047485989}

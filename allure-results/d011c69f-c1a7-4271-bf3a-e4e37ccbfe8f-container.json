@@ -1,0 +1,1 @@
+{"uuid":"d011c69f-c1a7-4271-bf3a-e4e37ccbfe8f","name":"Scenario: User clicks gets into stack page","children":["673a1ac8-c9f9-4c91-80a1-4d6d6e32b67e"],"befores":[{"name":"stepdefinition.Hooks.setUp()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1701047303436,"stop":1701047305828}],"afters":[],"start":1701047303250,"stop":1701047308168}

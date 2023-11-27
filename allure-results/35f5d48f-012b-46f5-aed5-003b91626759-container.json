@@ -1,0 +1,1 @@
+{"uuid":"35f5d48f-012b-46f5-aed5-003b91626759","name":"Scenario: User on operation in stack page","children":["17890fd1-158c-4b64-8fe5-9cffba76a647"],"befores":[{"name":"stepdefinition.Hooks.setUp()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1701047980259,"stop":1701047980260}],"afters":[],"start":1701047980258,"stop":1701047981256}

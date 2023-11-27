@@ -1,0 +1,783 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 26, 2023 07:11:14 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Handling stack options</p>
+            <p class="text-sm">
+              <span>7:11:15 PM</span> / <span>00:00:25:200</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Handling stack options</h5>
+<span class='badge badge-success'>11.26.2023 7:11:15 PM</span>
+<span class='badge badge-danger'>11.26.2023 7:11:40 PM</span>
+<span class='badge badge-default'>00:00:25:200</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User clicks gets into stack page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_is_logged_in_and_on_home_page_for_stack()">
+                <span>Given User is logged in and on Home Page for stack</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_clicks_on_stack_get_started_button_or_from_drop_menu_stack_item()">
+                <span>When User clicks on stack Get started button or from drop menu stack item</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_is_on_stack_intro_page()">
+                <span>Then User is on stack Intro page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>User on operation in stack page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.User_is_on_opertaion_stack_intro_page()">
+                <span>Given User is on opertaion stack Intro page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_clicks_on_opertaion_in_stack()">
+                <span>When user clicks on opertaion in stack</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.And_User_clicks_on_try_here()">
+                <span>And User clicks on try here</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_lands_on_try_editor_page_of_stack()">
+                <span>Then User lands on tryEditor page of stack</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>User redirected to try me page to run invalid code</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_lands_on_editor_page_for_invalid_code()">
+                <span>Given User lands on Editor page for invalid code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_enters_invalid_code_to_run_on_editor_in_stack(io.cucumber.datatable.DataTable)">
+                <span>When User enters invalid code to run on editor in stack</span>
+      <div><table class='markup-table table '><tr><td>System.out.println("Hi Java");</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_clicks_run_to_execute_code_for_stack()">
+                <span>And User clicks Run to execute code for stack</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition.DataStructuresPage.user_gets_a_error_message_and_dismisses_it()">
+                <span>Then User gets a error message and dismisses it</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageobjects.Datastructure.InValidOutputmessage()" because "this.fromDSjava" is null
+	at stepdefinition.DataStructuresPage.user_gets_a_error_message_and_dismisses_it(DataStructuresPage.java:81)
+	at ✽.User gets a error message and dismisses it(file:///C:/Users/kirti/git/numpy_coders/src/test/resources/features/stack.feature:19)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>User redirected to try me page to run python code</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinition.StackDefinition.user_lands_on_editor_page_valid_code()">
+                <span>Given User lands on Editor page valid code</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : NameError: name 'System' is not defined on line 1}
+  (Session info: chrome=119.0.6045.160): NameError: name 'System' is not defined on line 1
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07ec3c87041bd0f52c4fae58c44eae60, goBack {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\kirti\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61800/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07ec3c87041bd0f52c4fae58c44eae60
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:1142)
+	at pageobjects.Stack.navigate(Stack.java:79)
+	at stepdefinition.StackDefinition.user_lands_on_editor_page_valid_code(StackDefinition.java:84)
+	at ✽.User lands on Editor page valid code(file:///C:/Users/kirti/git/numpy_coders/src/test/resources/features/stack.feature:22)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.StackDefinition.user_enters_python_code_to_run_on_editor_of_stack(io.cucumber.datatable.DataTable)">
+                <span>When User enters python code to run on editor of stack</span>
+      <div><table class='markup-table table '><tr><td>print 'hello';</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.StackDefinition.user_clicks_run_to_execute_pythone_code()">
+                <span>And User clicks Run to execute pythone code</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.DataStructuresPage.user_gets_a_valid_output()">
+                <span>Then User gets a valid output</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>The user back to Stack page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.the_user_is_on_stack_page_for_clicks_on_implementation()">
+                <span>Given The user is on Stack page for clicks on implementation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_clicks_on_implementation()">
+                <span>When user clicks on implementation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.And_User_clicks_on_try_here()">
+                <span>And User clicks on try here</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_lands_on_try_editor_page_of_stack()">
+                <span>Then User lands on tryEditor page of stack</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log fail-bg mr-2">Fail</span>User redirected to try me page to run invalid code</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_lands_on_editor_page_for_invalid_code()">
+                <span>Given User lands on Editor page for invalid code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_enters_invalid_code_to_run_on_editor_in_stack(io.cucumber.datatable.DataTable)">
+                <span>When User enters invalid code to run on editor in stack</span>
+      <div><table class='markup-table table '><tr><td>System.out.println("Hi Java");</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_clicks_run_to_execute_code_for_stack()">
+                <span>And User clicks Run to execute code for stack</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition.DataStructuresPage.user_gets_a_error_message_and_dismisses_it()">
+                <span>Then User gets a error message and dismisses it</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "pageobjects.Datastructure.InValidOutputmessage()" because "this.fromDSjava" is null
+	at stepdefinition.DataStructuresPage.user_gets_a_error_message_and_dismisses_it(DataStructuresPage.java:81)
+	at ✽.User gets a error message and dismisses it(file:///C:/Users/kirti/git/numpy_coders/src/test/resources/features/stack.feature:39)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log fail-bg mr-2">Fail</span>User redirected to try me page to run python code</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinition.StackDefinition.user_lands_on_editor_page_valid_code()">
+                <span>Given User lands on Editor page valid code</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : NameError: name 'System' is not defined on line 1}
+  (Session info: chrome=119.0.6045.160): NameError: name 'System' is not defined on line 1
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07ec3c87041bd0f52c4fae58c44eae60, goBack {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\kirti\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61800/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07ec3c87041bd0f52c4fae58c44eae60
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:1142)
+	at pageobjects.Stack.navigate(Stack.java:79)
+	at stepdefinition.StackDefinition.user_lands_on_editor_page_valid_code(StackDefinition.java:84)
+	at ✽.User lands on Editor page valid code(file:///C:/Users/kirti/git/numpy_coders/src/test/resources/features/stack.feature:42)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.StackDefinition.user_enters_python_code_to_run_on_editor_of_stack(io.cucumber.datatable.DataTable)">
+                <span>When User enters python code to run on editor of stack</span>
+      <div><table class='markup-table table '><tr><td>print 'hello';</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.StackDefinition.user_clicks_run_to_execute_pythone_code()">
+                <span>And User clicks Run to execute pythone code</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinition.DataStructuresPage.user_gets_a_valid_output()">
+                <span>Then User gets a valid output</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>The user again back to Stack page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.the_user_on_stack_page_for_clicks_on_Applications()">
+                <span>Given The user on Stack page for clicks on Applications</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_clicks_on_applications()">
+                <span>When user clicks on Applications</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.And_User_clicks_on_try_here()">
+                <span>And User clicks on try here</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_lands_on_try_editor_page_of_stack()">
+                <span>Then User lands on tryEditor page of stack</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="49"><span class="badge log pass-bg mr-2">Pass</span>User redirected to try me page to run invalid code</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_lands_on_editor_page_for_invalid_code()">
+                <span>Given User lands on Editor page for invalid code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_enters_invalid_code_to_run_on_editor_in_stack(io.cucumber.datatable.DataTable)">
+                <span>When User enters invalid code to run on editor in stack</span>
+      <div><table class='markup-table table '><tr><td>System.out.println("Hi Java");</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_clicks_run_to_execute_code_for_stack()">
+                <span>And User clicks Run to execute code for stack</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_gets_an_error_message_and_dismisses_it()">
+                <span>Then User gets an error message and dismisses it</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>User redirected to try me page to run python code</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_lands_on_editor_page_valid_code()">
+                <span>Given User lands on Editor page valid code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_enters_python_code_to_run_on_editor_of_stack(io.cucumber.datatable.DataTable)">
+                <span>When User enters python code to run on editor of stack</span>
+      <div><table class='markup-table table '><tr><td>print 'hello';</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_clicks_run_to_execute_pythone_code()">
+                <span>And User clicks Run to execute pythone code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_gets_a_valid_output_in_stack()">
+                <span>Then User gets a valid output in stack</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>The user again Stack page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.The_user_is_on_Stack_page_for_click_practice_quest()">
+                <span>Given The user is on Stack page for click practice quest</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_clicks_on_practice_questions()">
+                <span>When user clicks on practice questions</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.StackDefinition.user_lands_on_practice_page()">
+                <span>Then User lands on practice page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.UnhandledAlertException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.UnhandledAlertException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:11:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>Given User lands on Editor page valid code</a>
+<div class="">
+<span class="badge badge-default">Handling stack options.User redirected to try me page to run python code.Given User lands on Editor page valid code</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:11:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Given User lands on Editor page valid code</a>
+<div class="">
+<span class="badge badge-default">Handling stack options.User redirected to try me page to run python code.Given User lands on Editor page valid code</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:11:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Then User gets a error message and dismisses it</a>
+<div class="">
+<span class="badge badge-default">Handling stack options.User redirected to try me page to run invalid code.Then User gets a error message and dismisses it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:11:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Then User gets a error message and dismisses it</a>
+<div class="">
+<span class="badge badge-default">Handling stack options.User redirected to try me page to run invalid code.Then User gets a error message and dismisses it</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 26, 2023 07:11:14 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 26, 2023 07:11:40 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='63%'><b>7</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='36%'><b>4</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='76%'><b>32</b> steps passed</small></div>
+<div>
+<small data-tooltip='9%'><b>4</b> steps failed,
+<b>6</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Handling stack options":25.2
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td>dsalgo</td>
+</tr>
+<tr>
+<td>version</td>
+<td>13.5.2</td>
+</tr>
+<tr>
+<td>os</td>
+<td>macOS</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 7,
+failChild: 4,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 32,
+failGrandChild: 4,
+warningGrandChild: 0,
+skipGrandChild: 6,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
