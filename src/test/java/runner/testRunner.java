@@ -5,8 +5,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import io.cucumber.testng.CucumberOptions;
-
-import Utilities.ConfigReader;
+import utilities.ConfigReader;
 import io.cucumber.junit.Cucumber;
 //import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -25,7 +24,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		)*/
 
 @CucumberOptions(
-		features = {"C:/Users/kirti/git/numpy_coders/src/test/resources/features/stack.feature"}
+		features = {"src/test/resources/features"}
 				,glue= {"stepdefinition"},
 				
 				plugin= {"pretty","html:target/cucumber.html",

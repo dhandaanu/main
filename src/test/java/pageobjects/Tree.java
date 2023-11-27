@@ -15,8 +15,8 @@ import org.testng.Assert;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 
-import Utilities.ExcelReader;
 import stepdefinition.Bclass;
+import utilities.ExcelReader;
 
 public class Tree extends Bclass{
 	//static WebDriver driver ; 
@@ -25,7 +25,7 @@ public class Tree extends Bclass{
 		this.driver = driver;
 	}
 	
-	private static final String Excelpath = "//Users/mor/work-anu/git/dsalgo/GitDemo/src/test/resources/Testexcelsheet.xlsx";
+	private static final String Excelpath = "src/test/resources/Exceldata/Pythoncode.xlsx";
 
 	private String Code;
 	public void openHomePage() {
@@ -148,7 +148,7 @@ public class Tree extends Bclass{
 		 } catch(ElementNotInteractableException e) {
 			 System.out.print("Element is not interactable is handled");
 		 }
-	 	    Thread.sleep(3000);
+	 	    Thread.sleep(500);
 	 }
 	 
 	public void validOp() {
@@ -165,7 +165,7 @@ public class Tree extends Bclass{
 		 } catch(ElementNotInteractableException e) {
 			 System.out.print("Element is not interactable is handled");
 		 }
-	 	    Thread.sleep(3000);
+	 	    Thread.sleep(500);
 	   }
 	 
 	 public void runBtn() {
@@ -177,7 +177,7 @@ public class Tree extends Bclass{
 		    Alert alert = driver.switchTo().alert();
 		    String alertMessage= driver.switchTo().alert().getText(); 
 		    System.out.println(alertMessage); 
-		    Thread.sleep(3000);
+		    Thread.sleep(500);
 		    alert.accept();
 
 		    }

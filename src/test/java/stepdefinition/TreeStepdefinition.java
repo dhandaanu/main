@@ -4,12 +4,12 @@ import java.io.IOException;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 
-import Utilities.Helper;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageobjects.Tree;
+import utilities.Helper;
 
 public class TreeStepdefinition extends Bclass {
 	     
@@ -246,6 +246,7 @@ public class TreeStepdefinition extends Bclass {
 	@Then("Tree User lands on practice page")
 	public void tree_user_lands_on_practice_page() {
 	   tree.pacticeQuesAssert();
+	   Helper.tearDown();
 	}
 
 

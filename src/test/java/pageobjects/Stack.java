@@ -94,7 +94,7 @@ public class Stack extends Bclass {
 	    List<String> codedata = table.asList();
 	   	String Coded = codedata.get(0);
         driver.findElement(By.xpath("//form[@id='answer_form']/div/div/div/textarea")).sendKeys(Coded);
-	 	Thread.sleep(3000);
+	 	Thread.sleep(500);
 
 	    }  	 
 	 		 
@@ -102,7 +102,7 @@ public class Stack extends Bclass {
 	    Alert alert = driver.switchTo().alert();
 	    String alertMessage= driver.switchTo().alert().getText(); 
 	    System.out.println(alertMessage); 
-	    Thread.sleep(3000);
+	    Thread.sleep(500);
 	    alert.accept();
 
 	    }
@@ -111,7 +111,7 @@ public class Stack extends Bclass {
 	     List<String> codedata1 = table1.asList();
 	   	 String Code1 = codedata1.get(0);
 	     driver.findElement(By.xpath("//form[@id='answer_form']/div/div/div/textarea")).sendKeys(Code1);
-	 	 Thread.sleep(3000);
+	 	 Thread.sleep(500);
         }     
 	 
 	 public void runBtn() throws InterruptedException {

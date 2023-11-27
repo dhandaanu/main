@@ -1,12 +1,12 @@
 package stepdefinition;
 
 
-import Utilities.Helper;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageobjects.Login;
+import utilities.Helper;
 
 
 public class loginPage extends Bclass{	
@@ -60,6 +60,7 @@ public class loginPage extends Bclass{
 	@And("user clicks Sign Out")
 	public void user_clicks_sign_out() {
 		fromloginjava.Signout();
+		Helper.tearDown();
 	}
 
 }

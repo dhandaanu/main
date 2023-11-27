@@ -1,10 +1,10 @@
 package stepdefinition;
 
-import Utilities.Helper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageobjects.HomePage;
+import utilities.Helper;
 
 
 public class DsportalgetstartStepdefinition extends Bclass {
@@ -142,7 +142,7 @@ public class DsportalgetstartStepdefinition extends Bclass {
 	public void Grapg_alert_msg_without_sign_you_are_not_logged_in() {
 		
 	    fromhomePage.alertLog();
-	    
+	    Helper.tearDown();
 	}
 	
 }	

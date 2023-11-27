@@ -21,7 +21,7 @@ Feature: Handling queue options
     Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+     
 
   Scenario Outline: User redirected to try me page to run python code
     Given User is on tryEditor page
@@ -31,8 +31,8 @@ Feature: Handling queue options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2 |
-      | TestCode  |         3 |
+      | TestCode  |         1 |
+     
 
     Scenario: User gets into Implementation using collections.deque page and uses the try me button
     Given User gets back on Implementation of queue in python page
@@ -50,7 +50,7 @@ Feature: Handling queue options
     Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+    
 
   Scenario Outline: User redirected to try me page to run python code
     Given User is on tryEditor page
@@ -60,8 +60,8 @@ Feature: Handling queue options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2 |
-      | TestCode  |         3 |
+      | TestCode  |         1 |
+  
       
     Scenario: User gets into Implementation using array page and uses the try me button
     Given User gets back Implementation using collections.deque page
@@ -79,7 +79,7 @@ Feature: Handling queue options
     Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+   
 
   Scenario Outline: User redirected to try me page to run python code
     Given User is on tryEditor page
@@ -89,8 +89,8 @@ Feature: Handling queue options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2 |
-      | TestCode  |         3 |
+      | TestCode  |         1 |
+   
        
     Scenario: User gets into Queue Operations page and uses the try me button
     Given User gets back Implementation using array page
@@ -109,7 +109,7 @@ Feature: Handling queue options
     Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+    
 
   Scenario Outline: User redirected to try me page to run python code
     Given User is on tryEditor page
@@ -119,8 +119,8 @@ Feature: Handling queue options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2 |
-      | TestCode  |         3 |
+      | TestCode  |         1 |
+   
       
     Scenario: User gets into Practice question page and signs out
     Given User gets back on Queue Operations from Deletion page

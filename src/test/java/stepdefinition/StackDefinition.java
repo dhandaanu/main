@@ -1,6 +1,5 @@
 package stepdefinition;
 
-import Utilities.Helper;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -8,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageobjects.Datastructure;
 import pageobjects.Stack;
+import utilities.Helper;
 
 public class StackDefinition extends Bclass{
 	
@@ -72,7 +72,7 @@ public class StackDefinition extends Bclass{
 	    stack.runBtn();
 	}
 
-	@Then("User gets a error message and dismisses it in stack ")
+	@Then("User gets a error message and dismisses it in stack")
 	public void user_gets_an_error_message_and_dismisses_it_in_stack() throws InterruptedException {
 		stack = new Stack(Helper.getDriver());
 		stack.inValidOutputMessage();
@@ -140,6 +140,7 @@ public class StackDefinition extends Bclass{
 	@Then("User lands on practice page")
 	public void user_lands_on_practice_page() {
 		stack.pacticeQuesAssert();
+		Helper.tearDown();
 	}
 
 }

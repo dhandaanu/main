@@ -1,10 +1,10 @@
 package stepdefinition;
 
-import Utilities.Helper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageobjects.HomePageCards;
+import utilities.Helper;
 
 public class HomePageCardStepdefinition extends Bclass{
 	
@@ -155,7 +155,7 @@ public class HomePageCardStepdefinition extends Bclass{
 	public void Graph_alert_with_a_message_you_are_not_logged_in() {
 		
 		card.alertAssert();
-		
+		Helper.tearDown();
 	}
 
 

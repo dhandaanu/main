@@ -1,13 +1,13 @@
 package stepdefinition;
 
 
-import Utilities.Helper;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageobjects.Datastructure;
+import utilities.Helper;
 
 
 public class DataStructuresPage extends Bclass {
@@ -121,6 +121,7 @@ public class DataStructuresPage extends Bclass {
 	public void user_navigates_back_and_clicks_signs_out() {
 		Helper.NavBack();
 		Helper.SignOutBtn();
+		Helper.tearDown();
 	}
 
 

@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import Utilities.ConfigReader;
-import Utilities.Helper;
+import utilities.ConfigReader;
+import utilities.Helper;
 
 public class Hooks {
 

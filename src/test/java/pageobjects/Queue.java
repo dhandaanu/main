@@ -10,14 +10,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import Utilities.ExcelReader;
-import Utilities.Helper;
 import stepdefinition.Bclass;
+import utilities.ExcelReader;
+import utilities.Helper;
 
 public class Queue extends Bclass{
 
 
-	private static final String Excelpath = "C:/Users/kirti/eclipse-workspace/NumpyNinja_Project/src/test/resources/Exceldata/Pythoncode.xlsx";
+	private static final String Excelpath = "src/test/resources/Exceldata/Pythoncode.xlsx";
 	By GTBttn = By.xpath("//a[@href= 'queue' and @class='align-self-end btn btn-lg btn-block btn-primary']");
 	By Implemantationbtn = By.xpath("//a[text()='Implementation of Queue in Python']");
 	By TextArea = By.xpath("//form[@id='answer_form']/div/div/div/textarea");

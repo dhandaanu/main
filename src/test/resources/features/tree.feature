@@ -20,7 +20,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+  
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -30,8 +30,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+    
   
   Scenario: User is back on Tree page for clicks on Terminologies
    Given User is on Tree page for clicks Terminologies
@@ -48,7 +48,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+    
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -58,8 +58,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+
   
    
    Scenario: User is back on Tree page for clicks on Types of Trees
@@ -77,7 +77,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -87,8 +87,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+   
   
       
    
@@ -107,7 +107,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+  
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -117,8 +117,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+  
   
   Scenario: User is back on Tree page for clicks on Traversals-Illustration
    Given User is on Tree page for clicks Traversals-Illustration
@@ -135,7 +135,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+   
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -145,8 +145,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+     
   
   
    Scenario: User is back on Tree page for clicks on Binary Trees
@@ -164,7 +164,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+   
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -174,8 +174,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+    
   
     
   Scenario: User is back on Tree page for clicks on Types of Binary Trees
@@ -193,7 +193,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+     
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -203,8 +203,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+  
   
   Scenario: User is back on Tree page for clicks on Implementation in Python
    Given User is on Tree page for clicks Implementation in Python
@@ -221,7 +221,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+ 
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -231,8 +231,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+     
   
   Scenario: User is back on Tree page for clicks on Binary Tree Traversals
    Given User is on Tree page for clicks Binary Tree Traversals
@@ -249,7 +249,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+  
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -259,8 +259,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+     
    
    Scenario: User is back on Tree page for clicks on Implementation of Binary Trees
    Given User is on Tree page for clicks Implementation of Binary Trees
@@ -277,7 +277,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -287,8 +287,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+     
   
   
    Scenario: User is back on Tree page for clicks on Applications of Binary trees
@@ -306,7 +306,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -316,11 +316,10 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+     
   
           
-  
   Scenario: User is back on Tree page for clicks on Binary Search Trees
    Given User is on Tree page for clicks Binary Search Trees
     When user clicks on Binary Search Trees
@@ -336,8 +335,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
-
+   
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
     When Tree The user enters valid sheet "<Sheetname>" and <RowNumber>
@@ -346,8 +344,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+ 
   
   
    Scenario: User is back on Tree page for clicks on Implementation Of BST
@@ -365,7 +363,7 @@ Feature: Handling Tree options
    Examples: 
       | Sheetname | RowNumber |
       | TestCode  |         0 |
-      | TestCode  |         1 |
+
 
   Scenario Outline: Tree User redirected to try me page to run python code
     Given Tree User is on tryEditor page for python code
@@ -375,8 +373,8 @@ Feature: Handling Tree options
 
     Examples: 
       | Sheetname | RowNumber |
-      | TestCode  |         2|
-      | TestCode  |         3|
+      | TestCode  |         1|
+     
   
       
   Scenario: User is back on Tree page for clicks on Practice Questions
