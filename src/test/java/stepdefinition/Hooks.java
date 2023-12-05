@@ -25,17 +25,25 @@ public class Hooks {
 //	  Helper.tearDown();
 //	  }
 	
+	 @After
+	    public static void tearDown(Scenario scenario) {
+
+	        if(scenario.isFailed()) {
+	            final byte[] screenshot = ((TakesScreenshot) Helper.getDriver()).getScreenshotAs(OutputType.BYTES);
+	            scenario.attach(screenshot, "image/png", scenario.getName()); 
+	        }  
 	
-	//    @After
-	//    public static void tearDown(Scenario scenario) {
-	// 
-	//        if(scenario.isFailed()) {
-	//            final byte[] screenshot = ((TakesScreenshot) Helper.getDriver()).getScreenshotAs(OutputType.BYTES);
-	//            scenario.attach(screenshot, "image/png", scenario.getName()); 
-	//        }  
-	//         
-	//        Helper.tearDown();
-	//    }
+	 }
+	/*   @After
+	    public static void tearDown(Scenario scenario) {
+	 
+	        if(scenario.isFailed()) {
+	            final byte[] screenshot = ((TakesScreenshot) Helper.getDriver()).getScreenshotAs(OutputType.BYTES);
+	            scenario.attach(screenshot, "image/png", scenario.getName()); 
+	        }  
+         
+	        Helper.tearDown();
+    }*/
 
 	/*@Before
 	public static void setUp() {

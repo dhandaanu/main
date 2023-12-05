@@ -48,26 +48,19 @@ public class RegisterSteps extends Bclass{
     @And("Clicks on register button")
 	public void clicks_on_register_button() {
     	
-    	//fromregisterjava = new RegisterPage();
-    	
-		System.out.println("Click on register button"); 
+    	System.out.println("Click on register button"); 
 		fromregisterjava.register();
-		
-		
 	}
     
     @Then("User gets instruction")
     public void user_gets_instruction() {
-    	
-    	//fromregisterjava = new RegisterPage(); 
-    	
     	System.out.println("The user gets _please fill out this field_ instruction ");
     }
     
     
     @Then("The user is navigated to the homepage")
 	public void user_is_navigated_to_the_homepage() {
-	//	fromregisterjava = new RegisterPage();
+	
     	fromregisterjava = new RegisterPage(Helper.getDriver());
 		fromregisterjava.successMsg();
 	    
@@ -75,25 +68,19 @@ public class RegisterSteps extends Bclass{
 
 	@Then("The User gets an error message for password missmatch")
 	public void the_user_gets_an_error_message_for_password_missmatch() {
-	    
-	//	fromregisterjava = new RegisterPage();
+	  	
 		fromregisterjava = new RegisterPage(Helper.getDriver());
 		fromregisterjava.pwdmissMatch();
-		Helper.tearDown();
+		//Helper.tearDown();
 	
 	}
-
-
 	
+	@Then("User should see an error msg user is already resgisered")
+	public void User_should_see_an_error_msg_user_is_already_resgisered() {
 
-	
+		fromregisterjava = new RegisterPage(Helper.getDriver());
+		fromregisterjava.Reregister();
+		Helper.tearDown();
 
-	
-
-	
-
-	
-
-	
-
+	}
 }
